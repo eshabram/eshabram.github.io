@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    padding-top: 4em;
+
+}
+
+p {
+    padding-bottom: 2em;
+}
+img {
+    width: 40em;
+    max-width: 90%;
+}
