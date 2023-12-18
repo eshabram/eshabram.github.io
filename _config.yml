@@ -3,4 +3,4 @@ description: A simple website hosted on github for free.
 url: https://elliotshabram.com
 author: Elliot Shabram
 permalink: /:year/:month/:day/:title/
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker
