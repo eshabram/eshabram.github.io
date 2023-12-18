@@ -17,3 +17,18 @@ img {
     width: 40em;
     max-width: 90%;
 }
+.container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.box {
+    width: 40%; /* Adjust the width as needed */
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    text-align: center; /* Horizontally center text */
+}
+
+.box img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+}
