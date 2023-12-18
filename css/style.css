@@ -2,11 +2,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #58a7c9;
+    background-color: #000000;
+    color: rgb(226, 217, 217)
+    
 }
 h1 {
     padding-top: 4em;
-
 }
 
 p {
