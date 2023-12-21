@@ -44,7 +44,7 @@ img {
     max-width: 80%;
 }
 
-    /* Media query for responsive layout */
+/* Media query for responsive layout */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; 
