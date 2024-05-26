@@ -6,34 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
 
 <body>
 
-  <!--Navbar-->
-  <div class="header">
-    <div class="contact-info">
-      <span>elliotshabram@gmail.com</span>
-      <span>831-238-3146</span>
-    </div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="research.html">Research</a>
-      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
-      <a href="accolades.html">Accolades</a>
-      <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">More</a>
-        <div class="dropdown-content">
-          <a href="projects.html">Projects</a>
-          <a href="photography.html">Photography</a>
+    <!--Navbar-->
+    <div class="header">
+        <div class="contact-info">
+            <span>elliotshabram@gmail.com</span>
+            <span>831-238-3146</span>
         </div>
-      </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="research.html">Research</a>
+            <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+            <a href="accolades.html">Accolades</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="projects.html">Projects</a>
+                    <a href="photography.html">Photography</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <footer>
-    &copy;2024 by Elliot Shabram.
-  </footer>
+    <!-- ABAC -->
+    <div class="center-container">
+        <div class="container">
+            <!-- Box 1 with an image -->
+            <div class="box">
+                <img src="assets/images/abac.png" alt="Image">
+            </div>
+
+            <!-- Box 2 with centered text -->
+            <div class="box">
+                <h1 class="title">ABAC Policy Attribute Prediction</h1>
+                <div class="innerBox">
+                    <p>
+                        Attribute Based Access Control (ABAC) policies are an efficient way to handle access
+                        control, but face challenges when generating rules that correctly authorize 
+                        users, and from missing attributes causing lesser permission. This research 
+                        consentrates on the latter, using an algorithm we have name Group Analysis to
+                        predict missing attribute data. 
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SMC -->
+    <div class="center-container">
+        <div class="container">
+            <!-- Box 1 with centered text -->
+            <div class="box">
+                <h1 class="title">SMC Compression</h1>
+                <div class="innerBox">
+                    <p>
+                        This research explores the optimization and use of a real-time data compression
+                        algorithm in short text messaging scenarios such as SMS. Traditional compression
+                        algorithms are typically not used with short messages because of their reliance on
+                        translation keys and repetitive characters, causing them to have a negative compression
+                        ratio for the average sized text message. SMC is headerless, leveraging dictionaries
+                        to encode and decode messages. SMC shows significant compression on massage lengths as
+                        small as two characters, making it a powerful streaming compression algorithm.
+                    </p>
+                </div>
+            </div>
+            <!-- Box 1 with an image -->
+            <div class="box">
+                <img src="assets/images/smc.webp" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- MANETs -->
+    <div class="center-container">
+        <div class="container"><br>
+            <!-- Box 1 with an image -->
+            <div class="box">
+                <img src="assets/images/mininet.gif" alt="Image">
+            </div>
+
+            <!-- Box 2 with centered text -->
+            <div class="box">
+                <h1 class="title">Mobile Ad Hoc Networks (MANETs)</h1>
+                <div class="innerBox">
+                    <p>
+                        My research into MANETs involves assessing network capability in various 
+                        network scenarios, and searching for solutions to the lack of reliability 
+                        due to the nature of multi-hop wireless networks. To conduct this research, 
+                        I used Mininet Wifi wireless network simulator to build and run various network 
+                        topologies, which allowed me to simulate large wireless networks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy;2024 by Elliot Shabram.
+    </footer>
 </body>
+
 </html>
