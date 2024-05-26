@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!--Navbar-->
-<link rel="stylesheet" href="css/nav.css">
-<ul class="menu">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="pg2.html">About</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <!--Navbar-->
+  <div class="header">
+    <div class="contact-info">
+      <span>elliotshabram@gmail.com</span>
+      <span>831-238-3146</span>
     </div>
-  </li>
-</ul>
-<div class="center-container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="research.html">Research</a>
+      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+      <a href="accolades.html">Accolades</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">More</a>
+        <div class="dropdown-content">
+          <a href="projects.html">Projects</a>
+          <a href="photography.html">Photography</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-container">
     <div class="container">
-        <!-- Box 1 with an image -->
-        <div class="box">
-            <img src="assets/images/elliot.webp" alt="Image">
+      <!-- Box 1 with an image -->
+      <div class="box">
+        <img src="assets/images/elliot.webp" alt="Image">
+      </div>
+
+      <!-- Box 2 with centered text -->
+      <div class="box">
+        <h1 class="title">Elliot Shabram</h1>
+        <div class="innerBox">
+          <p>
+            I am currently a graduate researcher at UC Davis. I am a father of two beautiful 
+            children, a musician, a lover of nature, and a passionate computer scientist. 
+            My research interests include radio technologies, networks and security, privacy, 
+            distributed systems, data compression, and topics in machine learning. I am particularly 
+            interested in wireless communication with IoT devices. My work has primarily centered 
+            around mobile ad-hoc networks (MANETs) and ABAC policy attribute prediction. I have also 
+            extensively researched data compression, designing a custom stream compression algorithm 
+            for real-time messaging targeting short text messaging.
         </div>
-        
-        <!-- Box 2 with centered text -->
-        <div class="box">
-            <h1>Elliot Shabram</h1>
-            <p>
-                I am currently an undergraduate researcher at California State University, Monterey Bay. 
-                I am a father of two beautiful children, a musician, a lover of nature, and a passionate 
-                computer scientist. My research interests include networks and security, privacy, mobile 
-                technology, packet radio, distributed systems, AI, and data compression.
-            </p>    
-        </div>
+        </p>
+      </div>
     </div>
-</div>
+  </div>
+      <!-- <a href="#" class="about-me-btn">About Me</a> -->
+
+  <footer>
+    &copy;2024 by Elliot Shabram.
+  </footer>
 </body>
+
 </html>

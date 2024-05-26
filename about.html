@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
 <body>
-    
+
+  <!--Navbar-->
+  <div class="header">
+    <div class="contact-info">
+      <span>elliotshabram@gmail.com</span>
+      <span>831-238-3146</span>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="research.html">Research</a>
+      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+      <a href="accolades.html">Accolades</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">More</a>
+        <div class="dropdown-content">
+          <a href="projects.html">Projects</a>
+          <a href="photography.html">Photography</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-container">
+    <div class="container">
+      <!-- Box 1 with an image -->
+      <div class="box">
+        <img src="assets/images/joe_wedding.png" alt="Image">
+      </div>
+
+      <!-- Box 2 with centered text -->
+      <div class="box">
+        <h1 class="title">About Me</h1>
+        <div class="innerBox">
+          <p>
+            I am a passionate father of two, lover of the outdoors, maker of music, 
+            and I am obsessed with programming. I tend to find things that I love 
+            and spend all my time thinking about how I can build them to be better. 
+            I am an ideas person, and a true creative at heart, and that is what drives 
+            me to build.
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-list" id="photoList">
+    <img src="assets/images/about/photo1.jpg" alt="Photo 1">
+    <img src="assets/images/about/photo2.jpg" alt="Photo 2">
+    <img src="assets/images/about/photo3.jpg" alt="Photo 3">
+    <img src="assets/images/about/photo4.jpg" alt="Photo 4">
+    <img src="assets/images/about/photo5.jpg" alt="Photo 5">
+    <img src="assets/images/about/photo6.jpg" alt="Photo 6">
+    <img src="assets/images/about/photo7.jpg" alt="Photo 7">
+    <img src="assets/images/about/photo8.jpg" alt="Photo 8">
+    <img src="assets/images/about/photo9.jpg" alt="Photo 9">
+    <img src="assets/images/about/photo10.jpg" alt="Photo 10">
+    <img src="assets/images/about/photo11.jpg" alt="Photo 11">
+    <img src="assets/images/about/photo12.jpg" alt="Photo 12">
+
+
+</div>
+
+<script>
+    const photoList = document.getElementById('photoList');
+    let scrollAmount = 0;
+    const scrollSpeed = 1; // Adjust the speed as needed
+
+    function scrollPhotos() {
+        if (scrollAmount >= photoList.scrollWidth - photoList.clientWidth) {
+            scrollAmount = 0;
+        } else {
+            scrollAmount += scrollSpeed;
+        }
+        photoList.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+        requestAnimationFrame(scrollPhotos);
+    }
+
+    scrollPhotos();
+</script>
+
+  <footer>
+    &copy;2024 by Elliot Shabram.
+  </footer>
 </body>
 </html>
