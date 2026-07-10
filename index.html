@@ -4,62 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Elliot Shabram</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  <!--Navbar-->
-  <div class="header">
+  <header class="header">
     <div class="contact-info">
       <span>elliotshabram@gmail.com</span>
       <span>831-238-3146</span>
     </div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="research.html">Research</a>
-      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+      <a href="projects.html">Projects</a>
       <a href="accolades.html">Accolades</a>
-      <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">More</a>
-        <div class="dropdown-content">
-          <a href="projects.html">Projects</a>
-          <a href="photography.html">Photography</a>
-        </div>
-      </div>
-    </div>
-  </div>
+      <a href="photography.html">Photography</a>
+      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+    </nav>
+  </header>
 
-  <div class="center-container">
-    <div class="container">
-      <!-- Box 1 with an image -->
-      <div class="box">
-        <img src="assets/images/elliot.webp" alt="Image">
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-media">
+        <img src="assets/images/elliot.webp" alt="Elliot Shabram">
       </div>
-
-      <!-- Box 2 with centered text -->
-      <div class="box">
-        <h1 class="title">Elliot Shabram</h1>
-        <div class="innerBox">
-          <p>
-            I am currently a graduate researcher at UC Davis. I am a father of two beautiful 
-            children, a musician, a lover of nature, and a passionate computer scientist. 
-            My research interests include radio technologies, networks and security, privacy, 
-            distributed systems, data compression, and topics in machine learning. I am particularly 
-            interested in wireless communication with IoT devices. My work has primarily centered 
-            around mobile ad-hoc networks (MANETs) and ABAC policy attribute prediction. I have also 
-            extensively researched data compression, designing a custom stream compression algorithm 
-            for real-time messaging targeting short text messaging.
-        </div>
+      <div>
+        <p class="eyebrow">Computer scientist / researcher / builder</p>
+        <h1 class="hero-title">Elliot Shabram</h1>
+        <p class="lede">
+          I am a software and firmware engineer with a Master of Science in Computer Science from UC Davis. My work
+          spans embedded control systems, networked services, authentication and authorization flows, distributed
+          systems, security, and applied full-stack development.
         </p>
+        <ul class="stack" aria-label="Research and engineering interests">
+          <li>C/C++</li>
+          <li>C#/.NET</li>
+          <li>Python</li>
+          <li>FreeRTOS</li>
+          <li>Yocto Linux</li>
+          <li>TCP/Serial</li>
+          <li>Security</li>
+          <li>Networking</li>
+          <li>Embedded systems</li>
+        </ul>
+        <p>
+          Professionally, I build firmware and control software for industrial measurement systems, host applications
+          that communicate with controllers over serial and TCP links, and tooling that supports reliable release
+          workflows across distributed teams.
+        </p>
+        <div class="actions">
+          <a class="myButton" href="research.html">Research</a>
+          <a class="secondary-button" href="projects.html">Projects</a>
+          <a class="secondary-button" href="assets/Elliot_Shabram_CV.pdf">CV</a>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Current work</p>
+      <h2 class="title">Embedded, networked, and full-stack systems.</h2>
+      <div class="resume-grid">
+        <article class="resume-card">
+          <h3>Software/Firmware Engineer</h3>
+          <p>Lansmont Corporation, Monterey, CA. C/C++, FreeRTOS, Yocto Linux, Xilinx SoC/FPGA platforms, U-Boot, serial and TCP controller communication, Git, and Azure DevOps.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Networks Teaching Assistant</h3>
+          <p>CSUMB CST 311. Developed labs and programming assignments, led office hours, and supported student work in networking and systems topics.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Data and Web Tooling</h3>
+          <p>Community Builders for Monterey County. Analyzed impact data, tracked website analytics, and built scripts for API queries, dashboards, and visualizations.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy;2024 by Elliot Shabram.
+    &copy;2026 by Elliot Shabram.
   </footer>
 </body>
 

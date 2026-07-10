@@ -2,99 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Elliot Shabram</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
-
-  <!--Navbar-->
-  <div class="header">
+  <header class="header">
     <div class="contact-info">
       <span>elliotshabram@gmail.com</span>
       <span>831-238-3146</span>
     </div>
-    <div class="nav">
+    <nav class="nav" aria-label="Primary navigation">
       <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+      <a class="active" href="about.html">About</a>
       <a href="research.html">Research</a>
-      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+      <a href="projects.html">Projects</a>
       <a href="accolades.html">Accolades</a>
-      <div class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">More</a>
-        <div class="dropdown-content">
-          <a href="projects.html">Projects</a>
-          <a href="photography.html">Photography</a>
-        </div>
-      </div>
-    </div>
-  </div>
+      <a href="photography.html">Photography</a>
+      <a href="assets/Elliot_Shabram_CV.pdf">CV</a>
+    </nav>
+  </header>
 
-  <div class="center-container">
-    <div class="container">
-      <!-- Box 1 with an image -->
-      <div class="box">
-        <img src="assets/images/joe_wedding.png" alt="Image">
+  <main class="page-shell">
+    <section class="split">
+      <div class="feature-media about-photo">
+        <img src="assets/images/joe_wedding.png" alt="Elliot Shabram performing music">
       </div>
-
-      <!-- Box 2 with centered text -->
-      <div class="box">
-        <h1 class="title">About Me</h1>
-        <div class="innerBox">
-          <p>
-            I am a passionate father of two, lover of the outdoors, maker of music, 
-            and I am obsessed with programming. I tend to find things that I love 
-            and spend all my time thinking about how I can build them to be better. 
-            I am an ideas person, and a true creative at heart, and that is what drives 
-            me to build.
-        </div>
+      <div class="feature-copy">
+        <p class="eyebrow">About</p>
+        <h1 class="title">Curious, technical, and drawn to real systems.</h1>
+        <p class="lede">
+          I am a father, musician, outdoor person, and computer scientist. I recently completed my MS in Computer
+          Science at UC Davis after earning a BS in Computer Science with a Networks and Security concentration from
+          California State University, Monterey Bay.
+        </p>
+        <p>
+          My professional work is grounded in embedded and real-time software. At Lansmont, I build firmware and control
+          software for vibration controllers and data acquisition systems in C/C++ on FreeRTOS and Yocto Linux, along
+          with C#/.NET and PySide6 tools that configure tests, stream results, and retrieve waveform data over serial
+          and TCP links.
+        </p>
+        <p>
+          I tend to get absorbed by ideas that combine craft and utility: radios, privacy tools, embedded controllers,
+          compression schemes, home servers, music sites, and networks that can keep working without perfect
+          infrastructure. My best work usually starts with a practical question and turns into a deeper systems problem.
+        </p>
+        <p>
+          Outside of research and engineering, I spend my time with my family, making music, and getting outdoors.
         </p>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="photo-list" id="photoList">
-    <img src="assets/images/about/photo1.jpg" alt="Photo 1">
-    <img src="assets/images/about/photo2.jpg" alt="Photo 2">
-    <img src="assets/images/about/photo3.jpg" alt="Photo 3">
-    <img src="assets/images/about/photo4.jpg" alt="Photo 4">
-    <img src="assets/images/about/photo5.jpg" alt="Photo 5">
-    <img src="assets/images/about/photo6.jpg" alt="Photo 6">
-    <img src="assets/images/about/photo7.jpg" alt="Photo 7">
-    <img src="assets/images/about/photo8.jpg" alt="Photo 8">
-    <img src="assets/images/about/photo9.jpg" alt="Photo 9">
-    <img src="assets/images/about/photo10.jpg" alt="Photo 10">
-    <img src="assets/images/about/photo11.jpg" alt="Photo 11">
-    <img src="assets/images/about/photo12.jpg" alt="Photo 12">
+    <section class="section">
+      <p class="eyebrow">Education and tools</p>
+      <h2 class="title">Systems experience with a networking and security foundation.</h2>
+      <div class="resume-grid">
+        <article class="resume-card">
+          <h3>Education</h3>
+          <p>MS Computer Science, UC Davis. BS Computer Science, Networks and Security, CSUMB, magna cum laude.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Core languages</h3>
+          <p>C, C++, C#, Python, Java, JavaScript, Kotlin, Bash, Awk, Sed, and Tcl.</p>
+        </article>
+        <article class="resume-card">
+          <h3>Systems stack</h3>
+          <p>GNU/Linux, Windows, Android, U-Boot, Yocto Linux, Xilinx Zynq SoC platforms, Docker, QEMU, VMware, and VirtualBox.</p>
+        </article>
+      </div>
+    </section>
 
+    <section class="section">
+      <p class="eyebrow">Life outside the terminal</p>
+      <div class="photo-list" id="photoList" aria-label="Personal photo gallery">
+        <img src="assets/images/about/photo1.jpg" alt="Personal photo 1">
+        <img src="assets/images/about/photo2.jpg" alt="Personal photo 2">
+        <img src="assets/images/about/photo3.jpg" alt="Personal photo 3">
+        <img src="assets/images/about/photo4.jpg" alt="Personal photo 4">
+        <img src="assets/images/about/photo5.jpg" alt="Personal photo 5">
+        <img src="assets/images/about/photo6.jpg" alt="Personal photo 6">
+        <img src="assets/images/about/photo7.jpg" alt="Personal photo 7">
+        <img src="assets/images/about/photo8.jpg" alt="Personal photo 8">
+        <img src="assets/images/about/photo9.jpg" alt="Personal photo 9">
+        <img src="assets/images/about/photo10.jpg" alt="Personal photo 10">
+        <img src="assets/images/about/photo11.jpg" alt="Personal photo 11">
+        <img src="assets/images/about/photo12.jpg" alt="Personal photo 12">
+      </div>
+    </section>
+  </main>
 
-</div>
-
-<script>
-    const photoList = document.getElementById('photoList');
+  <script>
+    const photoList = document.getElementById("photoList");
     let scrollAmount = 0;
-    const scrollSpeed = 1; // Adjust the speed as needed
+    const scrollSpeed = 0.7;
 
     function scrollPhotos() {
-        if (scrollAmount >= photoList.scrollWidth - photoList.clientWidth) {
-            scrollAmount = 0;
-        } else {
-            scrollAmount += scrollSpeed;
-        }
-        photoList.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-        requestAnimationFrame(scrollPhotos);
+      if (!photoList) {
+        return;
+      }
+
+      if (scrollAmount >= photoList.scrollWidth - photoList.clientWidth) {
+        scrollAmount = 0;
+      } else {
+        scrollAmount += scrollSpeed;
+      }
+
+      photoList.scrollTo({ left: scrollAmount, behavior: "smooth" });
+      requestAnimationFrame(scrollPhotos);
     }
 
     scrollPhotos();
-</script>
+  </script>
 
   <footer>
-    &copy;2024 by Elliot Shabram.
+    &copy;2026 by Elliot Shabram.
   </footer>
 </body>
+
 </html>
